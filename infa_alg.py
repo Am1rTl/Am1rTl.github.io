@@ -26,16 +26,16 @@ for i in range(len(a)):
     if a[i] == "(" or a[i] == "<" or a[i] == "{" or a[i] == "[" :
         st.push(1)
     elif a[i] == ")" or a[i] == ">" or a[i] == "}" or a[i] == "]" :
-        if st.size() == 0:
+        if st.size == 0:
             print("All is good")
             s = 1
             break
         else:
             st.pop()
 if s != 1:
-    if st.size() == 0:
+    if st.size == 0:
         print("All is good")
-    elif st.size() > 0:
+    elif st.size > 0:
         print("All in not good")       
         
         
